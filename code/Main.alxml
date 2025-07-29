@@ -1,0 +1,14 @@
+<!--
+COMMENT
+-->
+
+<Window title="Debug Settings" width="400" height="800" pw="1" ph="1">
+    <Slider name="px" x="5"     y="50" w="190"  h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="py" x="205"   y="50" w="190"  h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="dx" x="5"     y="150" w="190" h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="dy" x="205"   y="150" w="190" h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="vx" x="5"     y="250" w="190" h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="vy" x="205"   y="250" w="190" h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="ax" x="5"     y="350" w="190" h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+    <Slider name="ay" x="205"   y="350" w="190" h="50" fontX="16" fontY="32" Fg="0xFFFFFFFF" Bg="0xFF888888"></Slider>
+</Window>
