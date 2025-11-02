@@ -47,7 +47,7 @@ typedef struct DebugWindow {
 void DebugAlxWindow_Setup(DebugWindow* dw){
 
 }
-void DebugAlxWindow_Update(DebugWindow* dw,double w->ElapsedTime){
+void DebugAlxWindow_Update(DebugWindow* dw,double ElapsedTime){
     Scene_Update(&dw->scene,dw->w.Strokes,(Vec2){ dw->w.MouseX,dw->w.MouseY },(Vec2){ dw->w.MouseBeforeX,dw->w.MouseBeforeY });
 	Graphics_Clear(dw->w.Buffer,dw->w.Width,dw->w.Height,BLACK);
 	Scene_Render(dw->w.Buffer,dw->w.Width,dw->w.Height,&dw->scene);
@@ -192,7 +192,7 @@ DebugWindow DebugAlxWindow_New(char* File_alxml,void (*DebugAlxWindow_EventHandl
     int pw = Component_Attr_is(c_window,"pw") ? Number_Parse(Component_Attr_Get(c_window,"pw")) : 1;
     int ph = Component_Attr_is(c_window,"ph") ? Number_Parse(Component_Attr_Get(c_window,"ph")) : 1;
 	
-    dw.w = AlxAlxWindow_New(
+    dw.w = AlxWindow_New(
         title,
         Width,
         Height,
@@ -221,7 +221,7 @@ void DebugAlxWindow_Free(DebugWindow* dw){
     dw->w.Running = 0;
     dw->t.running = 0;
 
-    Thread_Join(&dw->t,NULL);
+    Thread_Join(&dw->t);
 
     Scene_Free(&dw->scene);
     Component_Free(&dw->cg);
