@@ -58,7 +58,7 @@ void DebugAlxWindow_Delete(DebugWindow* dw){
 
 void* DebugAlxWindow_Executer(void* a){
     DebugWindow* dw = (DebugWindow*)a;
-    AlxAlxWindow_Start(&dw->w);
+    AlxWindow_Start(&dw->w);
 }
 
 DebugWindow DebugAlxWindow_New(char* File_alxml,void (*DebugAlxWindow_EventHandler)(void*,EventId*)){
