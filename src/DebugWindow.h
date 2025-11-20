@@ -179,7 +179,7 @@ DebugWindow DebugAlxWindow_New(char* File_alxml,void (*DebugAlxWindow_EventHandl
     );
     
     ComponentML_Source(&dw.cml,"./code/Main.alxml");
-    //TokenMap_Print(&cml.tm);
+    //TokenMap_Print(&dw.cml.tm);
 
     dw.cg = ComponentML_Build(&dw.cml);
     Component_Scene_Push_R(&dw.cg,&dw.scene);

@@ -56,7 +56,6 @@ void EventHandler(void* r,EventId* e){
 
 void Setup(AlxWindow* w){
 	tv = TransformedView_New((Vec2){ GetWidth(),GetHeight() });
-	TransformedView_Offset(&tv,(Vec2){ 0.0f,0.0f });
 
 	rect = (Rect){ 0.0f,0.0f,0.05f,0.05f };
 	v = (Vec2){ 0.0f,0.0f };
