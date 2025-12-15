@@ -61,7 +61,7 @@ void* DebugAlxWindow_Executer(void* a){
     AlxWindow_Start(&dw->w);
 }
 
-DebugWindow DebugAlxWindow_New(char* File_alxml,void (*DebugAlxWindow_EventHandler)(void*,EventId*)){
+DebugWindow DebugAlxWindow_New(char* File_alxml,void (*DebugAlxWindow_EventHandler)(void*,void*,EventId*)){
     DebugWindow dw;
     
     dw.scene = Scene_New();

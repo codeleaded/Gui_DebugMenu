@@ -18,7 +18,7 @@ Vec2 a;
 
 DebugWindow dg_w;
 
-void EventHandler(void* r,EventId* e){
+void EventHandler(void* parent,void* r,EventId* e){
     Renderable* ra = (Renderable*)r;
     Component* c = Component_Scene_FindRR(&dg_w.cg,ra);
 	
